@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      width: 500px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .image-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .image-section img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .image-section h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .info p {
+      font-size: 1rem;
+      color: #555;
+      margin: 0 0 15px 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: opacity 0.3s;
+    }
+
+    .buttons a:hover {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        flex-direction: column;
+        width: 70vw;
+        padding: 15px;
+      }
+
+      .image-section img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .buttons a {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="image-section">
+      <img src="https://static.vecteezy.com/system/resources/previews/026/434/409/non_2x/default-avatar-profile-icon-social-media-user-photo-vector.jpg" alt="Profile Image">
+      <h2>ESHIKA KAR</h2>
+    </div>
+    <div class="info">
+      <p>Web developer passionate about building modern web applications and learning new technologies.</p>
+      <div class="buttons">
+        <a href="#">Contact</a>
+        <a href="#">Portfolio</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grids</title>
+  <style>
+    .container {
+      border: 2px solid yellow;
+      width: 1200px;
+      height: 1000px;
+      margin:auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr) ;
+      grid-column-gap: 20px;
+      padding: 20px;
+    }
+    #box1{
+      grid-column: 1/6; 
+      border: 2px solid purple;
+    }
+    #box2{
+       grid-column: 1/-4;
+       border: 2px solid green;
+    }
+    #box3{
+         border: 2px solid blue;
+         }
+    #box4{
+      grid-column: -3/-1;
+       border: 2px solid black;
+     }
+    .mid{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Create a parent element having 9 children divs -->
+  <div class="container">
+    <div class="box "id="box1"></div>
+    <div class="box" id="box2"></div>
+   <div class="mid">
+     <div class="box"id="box3"></div>
+    <div class="box" id="box3"></div>
+  </div>
+    <div class="box" id="box4"></div>
+  </div>
+</body>
+
+</html>
